@@ -45,3 +45,30 @@
 .card-title {
   color: black;
 }
+
+.card-col {
+  position: relative;
+}
+
+.date-info {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.mb-4.col {
+  height: 300px;
+}
+
+.card-col.card {
+  height: 300px;
+}
+
+.mb-4.col {
+  height: 300px;
+}

@@ -31,7 +31,6 @@ const DetailsComponent = () => {
 
   return (
     <>
-      {console.log(detail?.id)}
       <Row className="justify-content-center mb-3">
         <h1>{detail?.title}</h1>
       </Row>

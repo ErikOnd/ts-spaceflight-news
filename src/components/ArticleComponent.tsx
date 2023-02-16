@@ -9,17 +9,17 @@ interface ArticleComponentProps {
 const ArticleComponent = (props: ArticleComponentProps) => {
   return (
     <Col className="mb-4" key={props.article.id}>
-      <Link
-        to={`/details/${props.article.id}`}
-        style={{ textDecoration: "none" }}
-      >
-        <Card className="card-col">
+      <Card className="card-col">
+        <Link
+          to={`/details/${props.article.id}`}
+          style={{ textDecoration: "none" }}
+        >
           <Card.Img variant="top" src={props.article.imageUrl} />
           <Card.Body>
             <Card.Title id="card-title">{props.article.title}</Card.Title>
           </Card.Body>
-        </Card>
-      </Link>
+        </Link>
+      </Card>
     </Col>
   );
 };
