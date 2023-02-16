@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.article-img {
+  max-height: 600px;
+  border-radius: 10px;
+}
+
+.card-title {
+  color: black;
+}
