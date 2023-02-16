@@ -1,6 +1,7 @@
 import { IArticles } from "./interfaces/IArticles";
-import { Col, Card } from "react-bootstrap";
+import { Col, Card, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { format } from "date-fns";
 
 interface ArticleComponentProps {
   article: IArticles;
@@ -17,6 +18,12 @@ const ArticleComponent = (props: ArticleComponentProps) => {
           <Card.Img variant="top" src={props.article.imageUrl} />
           <Card.Body>
             <Card.Title id="card-title">{props.article.title}</Card.Title>
+            <Badge className="time-badge">
+              {format(
+                new Date(Date.parse(props.article.publishedAt)),
+                "dd.MM.yyyy"
+              )}
+            </Badge>
           </Card.Body>
         </Link>
       </Card>

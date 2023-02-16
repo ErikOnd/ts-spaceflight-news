@@ -72,3 +72,11 @@
 .mb-4.col {
   height: 300px;
 }
+
+.time-badge {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: lightgreen;
+  color: black;
+}

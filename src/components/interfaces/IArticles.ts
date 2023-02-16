@@ -5,8 +5,8 @@ export interface IArticles {
   imageUrl: string;
   newsSite: string;
   summary: string;
-  publishedAt: Date;
-  updatedAt: Date;
+  publishedAt: string;
+  updatedAt: string;
   featured: boolean;
   launches: string[] | Date[];
   events: any[];
